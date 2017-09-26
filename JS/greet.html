@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:margin="http://www.w3.org/1999/xhtml" xmlns:margin-right="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeter</title>
+<style>
+ #button{
+     margin-left: 100px;
+
+ }
+#bd1{
+    margin-left:500px ;
+    margin-top: 220px;
+}
+#msg{
+    margin-left: 476px;
+
+}
+
+</style>
+
+    <script>
+    function sayWelcome() {
+        var x = document.getElementById("txtname");
+        var y = document.getElementById("msg");
+        y.innerHTML = y.innerHTML + " " + x.value;
+    }
+
+
+    </script>
+</head>
+<body>
+<table border="1" id="bd1">
+    <tr>
+        <td><label for="">Enter Your Name</label></td>
+    <td><input id="txtname" placeholder="Type your name here" type="text"/> </td>
+    </tr>
+<tr>
+    <td colspan="2">
+    <button id="button"onclick="sayWelcome()">Greetings</button>
+</td>
+    </tr>
+</table>
+
+<h1 id="msg">Welcome</h1>
+</body>
+</html>

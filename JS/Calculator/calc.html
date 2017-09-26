@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:margin="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Calculator</title>
+<script src="calc.js"></script>
+</head>
+<body>
+<table border="2">
+    <tr>
+        <td><label for="firstNum">Enter First No:</label> </td>
+        <td><input id="firstNum" placeholder="Type First No:" type="text"> </td>
+    </tr>
+    <tr>
+        <td><label for="secondNum">Enter Second No:</label> </td>
+        <td><input id="secondNum" placeholder="Type Second No:" type="text"></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <table border="3" cellspacing="5">
+                <tr>
+                    <td><button id="add">Add</button> </td>
+                    <td><button id="subtract">Sub</button> </td>
+                    <td><button id="multiply">Multi</button> </td>
+                    <td><button id="divide">Div</button> </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<h1>Result is <span id="result"></span> </h1>
+</body>
+</html>

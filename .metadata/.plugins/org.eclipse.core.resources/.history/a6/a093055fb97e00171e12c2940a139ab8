@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class CookChef {
+
+	public static void main(String[] args) {
+		int i,t;
+		boolean isPossible=true;
+		String list[],s;
+
+Scanner scanner=new Scanner(System.in);
+System.out.println("Enter the number of test cases");
+t=scanner.nextInt();
+list=new String[t];
+System.out.println("Enter the String");
+for()
+	}
+
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1454163357977" analysisTimestamp="1454163349149" release="">
+  <Project projectName="PROJAVA">
+    <Jar>D:\DUCAT\PROJAVA\bin</Jar>
+    <AuxClasspathEntry>D:\DUCAT\PROJAVA\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_72\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>D:\DUCAT\PROJAVA\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="Employee">
+      <SourceLine classname="Employee" sourcefile="Employee.java" sourcepath="Employee.java"/>
+    </Class>
+    <Method classname="Employee" name="getDa" signature="()V" isStatic="false">
+      <SourceLine classname="Employee" start="160" end="162" startBytecode="0" endBytecode="90" sourcefile="Employee.java" sourcepath="Employee.java"/>
+    </Method>
+    <SourceLine classname="Employee" start="160" end="160" startBytecode="11" endBytecode="11" sourcefile="Employee.java" sourcepath="Employee.java"/>
+    <SourceLine classname="Employee" start="160" end="160" startBytecode="11" endBytecode="11" sourcefile="Employee.java" sourcepath="Employee.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="Employee">
+      <SourceLine classname="Employee" sourcefile="Employee.java" sourcepath="Employee.java"/>
+    </Class>
+    <Method classname="Employee" name="getHra" signature="()V" isStatic="false">
+      <SourceLine classname="Employee" start="152" end="154" startBytecode="0" endBytecode="90" sourcefile="Employee.java" sourcepath="Employee.java"/>
+    </Method>
+    <SourceLine classname="Employee" start="152" end="152" startBytecode="11" endBytecode="11" sourcefile="Employee.java" sourcepath="Employee.java"/>
+    <SourceLine classname="Employee" start="152" end="152" startBytecode="11" endBytecode="11" sourcefile="Employee.java" sourcepath="Employee.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="Employee">
+      <SourceLine classname="Employee" sourcefile="Employee.java" sourcepath="Employee.java"/>
+    </Class>
+    <Method classname="Employee" name="getTa" signature="()V" isStatic="false">
+      <SourceLine classname="Employee" start="156" end="158" startBytecode="0" endBytecode="90" sourcefile="Employee.java" sourcepath="Employee.java"/>
+    </Method>
+    <SourceLine classname="Employee" start="156" end="156" startBytecode="11" endBytecode="11" sourcefile="Employee.java" sourcepath="Employee.java"/>
+    <SourceLine classname="Employee" start="156" end="156" startBytecode="11" endBytecode="11" sourcefile="Employee.java" sourcepath="Employee.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="TestEmployee">
+      <SourceLine classname="TestEmployee" sourcefile="TestEmployee.java" sourcepath="TestEmployee.java"/>
+    </Class>
+    <Method classname="TestEmployee" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="TestEmployee" start="7" end="23" startBytecode="0" endBytecode="62" sourcefile="TestEmployee.java" sourcepath="TestEmployee.java"/>
+    </Method>
+    <LocalVariable name="b" register="2" pc="16" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="TestEmployee" start="8" end="8" startBytecode="15" endBytecode="15" sourcefile="TestEmployee.java" sourcepath="TestEmployee.java"/>
+    <SourceLine classname="TestEmployee" start="8" end="8" startBytecode="15" endBytecode="15" sourcefile="TestEmployee.java" sourcepath="TestEmployee.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="b"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="TestEmployee">
+      <SourceLine classname="TestEmployee" sourcefile="TestEmployee.java" sourcepath="TestEmployee.java"/>
+    </Class>
+    <Method classname="TestEmployee" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="TestEmployee" start="7" end="23" startBytecode="0" endBytecode="62" sourcefile="TestEmployee.java" sourcepath="TestEmployee.java"/>
+    </Method>
+    <LocalVariable name="e" register="4" pc="33" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="TestEmployee" start="12" end="12" startBytecode="33" endBytecode="33" sourcefile="TestEmployee.java" sourcepath="TestEmployee.java"/>
+    <SourceLine classname="TestEmployee" start="12" end="12" startBytecode="33" endBytecode="33" sourcefile="TestEmployee.java" sourcepath="TestEmployee.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="e"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="TestEmployee">
+      <SourceLine classname="TestEmployee" sourcefile="TestEmployee.java" sourcepath="TestEmployee.java"/>
+    </Class>
+    <Method classname="TestEmployee" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="TestEmployee" start="7" end="23" startBytecode="0" endBytecode="311" sourcefile="TestEmployee.java" sourcepath="TestEmployee.java"/>
+    </Method>
+    <String value="list"/>
+    <Type descriptor="Ljava/util/ArrayList;">
+      <SourceLine classname="java.util.ArrayList"/>
+    </Type>
+    <SourceLine classname="TestEmployee" start="25" end="25" startBytecode="118" endBytecode="118" sourcefile="TestEmployee.java" sourcepath="TestEmployee.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 30 Jan 2016 16:53:57 +0530" total_classes="3" referenced_classes="21" total_bugs="6" total_size="129" num_packages="1" java_version="1.8.0_72" vm_version="25.72-b15" cpu_seconds="5.61" clock_seconds="8.84" peak_mbytes="218.68" alloc_mbytes="494.94" gc_seconds="0.22" priority_2="6">
+    <PackageStats package="" total_bugs="6" total_types="3" total_size="129" priority_2="6">
+      <ClassStats class="Employee" sourceFile="Employee.java" interface="false" size="98" bugs="3" priority_2="3"/>
+      <ClassStats class="IP" sourceFile="IP.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="TestEmployee" sourceFile="TestEmployee.java" interface="false" size="20" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="813" invocations="2" avgMicrosecondsPerInvocation="406866" maxMicrosecondsPerInvocation="444741" standardDeviationMircosecondsPerInvocation="37875"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="264" invocations="360" avgMicrosecondsPerInvocation="734" maxMicrosecondsPerInvocation="47110" standardDeviationMircosecondsPerInvocation="2681"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="159" invocations="360" avgMicrosecondsPerInvocation="443" maxMicrosecondsPerInvocation="22353" standardDeviationMircosecondsPerInvocation="1942"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="97" invocations="21" avgMicrosecondsPerInvocation="4648" maxMicrosecondsPerInvocation="44724" standardDeviationMircosecondsPerInvocation="9397"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="90" invocations="29" avgMicrosecondsPerInvocation="3117" maxMicrosecondsPerInvocation="84357" standardDeviationMircosecondsPerInvocation="15355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="70" invocations="3" avgMicrosecondsPerInvocation="23530" maxMicrosecondsPerInvocation="70478" standardDeviationMircosecondsPerInvocation="33197"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="67" invocations="21" avgMicrosecondsPerInvocation="3228" maxMicrosecondsPerInvocation="49852" standardDeviationMircosecondsPerInvocation="10530"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IDivResultCastToDouble" totalMilliseconds="63" invocations="3" avgMicrosecondsPerInvocation="21237" maxMicrosecondsPerInvocation="63615" standardDeviationMircosecondsPerInvocation="29965"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="57" invocations="29" avgMicrosecondsPerInvocation="1988" maxMicrosecondsPerInvocation="36772" standardDeviationMircosecondsPerInvocation="6670"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="56" invocations="108" avgMicrosecondsPerInvocation="519" maxMicrosecondsPerInvocation="5686" standardDeviationMircosecondsPerInvocation="759"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="56" invocations="40" avgMicrosecondsPerInvocation="1400" maxMicrosecondsPerInvocation="36693" standardDeviationMircosecondsPerInvocation="5744"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="51" invocations="21" avgMicrosecondsPerInvocation="2461" maxMicrosecondsPerInvocation="12304" standardDeviationMircosecondsPerInvocation="2820"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="46" invocations="3" avgMicrosecondsPerInvocation="15414" maxMicrosecondsPerInvocation="39439" standardDeviationMircosecondsPerInvocation="16988"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1454163357930" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

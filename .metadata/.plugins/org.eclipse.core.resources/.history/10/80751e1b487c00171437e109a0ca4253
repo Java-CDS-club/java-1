@@ -1,0 +1,68 @@
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class FirstCapDot {
+
+	public static void main(String[] args) {
+		String name[];
+		String s="",temp;
+		String pattern="^[a-zA-Z _]+$";
+		int t;
+		int i;
+		Scanner scanner=new Scanner(System.in);
+		while(true){
+		System.out.println("Enter the number of names in the list from 2 to 100");
+		t=scanner.nextInt();
+		if(t>=2&&t<=100){
+			break;
+		}
+		else{
+			System.out.println("Try Again with correct word length");
+		}
+		}
+		name=new String[t];
+		System.out.println("Enter the names in the list and length should be from 2 to 10");
+		for(i=0;i<t;i++){
+			temp=scanner.nextLine();
+		if(temp.length()>=2&&temp.length()<=10&&temp.matches(pattern)){
+		name[i]=temp;
+		
+		}
+		else{
+			System.out.println("Try again with correct word pattern");
+		i--;
+		}
+		
+		
+		}
+		
+		
+		
+		for(String nam:name){
+    	   for(i=0;i<nam.length();i++){
+    		   char c=nam.charAt(i);
+    		   if(!(Character.isSpaceChar(c))){
+    			 s=s+c;  
+    		   }
+    		   else{
+    			   System.out.print(Character.toUpperCase(s.charAt(0))+". ");
+    		       s="";
+    		   }
+    	   if(i==nam.length()-1){
+    		  s=s+c;
+    		   System.out.print(Character.toUpperCase(s.charAt(0))+s.substring(1));
+    	   }
+    	   
+    	   }
+       System.out.println();
+		}
+	
+	System.out.println("**********************************");
+	for(String k:name){
+		System.out.println(k);
+	}
+		
+	
+	}
+
+}

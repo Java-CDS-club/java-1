@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class TableTennis {
+
+	public static void main(String[] args) {
+		int t,win=0,loss=0,i;
+		String list[];
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the number of test cases");
+		t=scanner.nextInt();
+		list=new String[t];
+		System.out.println("Enter the string");
+		for(i=0;i<t;i++){
+			list[i]=scanner.next();
+			}
+
+	for(String s:list){
+		win=0;
+		loss=0;
+		for(i=0;i<s.length();i++){
+			char c=s.charAt(i);
+			if(c=='1'){
+				win++;
+			}
+			else if(c=='0'){
+			loss++;
+		}
+		if(win==11&&loss<10){
+			System.out.println("win");
+			break;
+		}
+		else if(loss==11&&win<10){
+			System.out.println("loss");
+			break;
+		}
+		if(win==10&&loss==10){
+			if(win==12){
+				System.out.println("win");
+				break;
+			}
+			else if(loss==12){
+				System.out.println("loss");
+				break;
+			}
+		
+		
+		}
+		
+		}
+	}
+	
+	
+	
+	
+	}
+
+}

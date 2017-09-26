@@ -1,0 +1,19 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Tern {
+
+	public static void main(String[] args) {
+		int a,b,c;
+		System.out.println("Enter the three numbers");
+		Scanner scanner=new Scanner(System.in);
+		a=scanner.nextInt();
+		b=scanner.nextInt();
+		c=scanner.nextInt();
+		int greatest=(a>b)?((a>c)?a:c):((b>c)?b:c);
+		System.out.println("The greatest is "+greatest);
+       scanner.close();
+	
+	}
+
+}

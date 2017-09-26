@@ -1,0 +1,48 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+public class Cons {
+
+	public static void main(String[] args) {
+		int size,sum=0;
+		//ArrayList<Integer> sumList=new ArrayList<>();
+		//ArrayList<Integer> list=new ArrayList<>();
+		CopyOnWriteArrayList<Integer> list=new CopyOnWriteArrayList<>();
+		//System.out.println("Enter the size of the array");
+Scanner scanner=new Scanner(System.in);
+size=scanner.nextInt();
+//System.out.println("Enter the numbers in the list");
+for(int i=1;i<=size;i++){
+	list.add(scanner.nextInt());
+}
+	//Iterator<Integer> it=list.iterator();
+
+
+for(int i:list){
+	try{
+	
+	sum=sum+i;
+	
+	
+		
+		list.remove(i+1);
+		
+	
+	
+		list.remove(i-1);
+		list.remove(i);
+	}catch(Exception e){}
+	}
+	
+	
+	
+	
+	
+
+	System.out.println(sum);
+	//System.out.println(list.size());
+	}
+
+}

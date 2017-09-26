@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager Application</title>
+<link rel="stylesheet" href="pagecontrol.css">
+<script src="../model.js"></script>
+<script src="controller.js"></script>
+</head>
+<body>
+<h1>Task Manager Application</h1>
+<hr>
+<table>
+    <tr>
+        <td><label for="taskname">TaskName</label></td>
+        <td><input type="text" id="taskname"/> </td>
+    </tr>
+    <tr>
+        <td><label for="desc">TaskDesc</label> </td>
+        <td><textarea id="desc"rows="5" cols="20"></textarea> </td>
+    </tr>
+    <table>
+        <tr>
+            <td><button id="add">Add New Task</button></td>
+            <td><button id="delete">Delete Completed Task</button></td>
+            <td><button id="save">Save Task</button> </td>
+            <td><button id="load">Load Task</button> </td>
+       <td><input type="checkbox" id="search">Tick To Show Search</td>
+       <td><input type="checkbox" id="sort">Tick To Sort</td>
+
+        </tr>
+    <tr>
+        <td>
+        <h2>Task Completed::<span id="taskcompleted"></span> </h2></td>
+        <td><h2>Task Pending::<span id="taskpending"></span> </h2></td>
+    </tr>
+
+    </table>
+     <tr><h3>Task List</h3></tr>
+    <hr>
+    <fieldset id="fieldset">
+   <ul id="taskList"></ul>
+</fieldset>
+</table>
+</body>
+</html>

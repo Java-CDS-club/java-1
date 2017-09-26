@@ -1,0 +1,5 @@
+COMPANY.outdir=/test-output
+COMPANY.useProjectJar=true
+TESTUSE.outdir=/test-output
+TESTUSE.useProjectJar=true
+eclipse.preferences.version=1

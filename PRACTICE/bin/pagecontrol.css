@@ -1,0 +1,30 @@
+#add{
+    background-color: green;
+   color: white;
+    margin-left: 90px;
+}
+#delete{
+    background-color: red;
+    color: white;
+}
+
+#save{
+    background-color: dodgerblue;
+    color: white;
+}
+
+#load{
+    background-color:darkblue;
+    color: white;
+}
+li{
+    color: green;
+}
+#taskname{
+
+padding-right: 1080px;
+  }
+#desc{
+    padding-right: 1090px;
+
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1454256834776" analysisTimestamp="1454256828510" release="">
+  <Project projectName="TESTUSE">
+    <Jar>D:\DUCAT\TESTUSE\bin</Jar>
+    <AuxClasspathEntry>D:\DUCAT\TESTUSE\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\DUCAT\TESTUSE\testng-6.9.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse-jee-luna-SR1a-win32\eclipse\plugins\org.testng.eclipse_6.9.10.201512240000\lib\testng.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse-jee-luna-SR1a-win32\eclipse\plugins\org.testng.eclipse_6.9.10.201512240000\lib\jcommander.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse-jee-luna-SR1a-win32\eclipse\plugins\org.testng.eclipse_6.9.10.201512240000\lib\bsh-2.0b4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse-jee-luna-SR1a-win32\eclipse\plugins\org.testng.eclipse_6.9.10.201512240000\lib\snakeyaml.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_72\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>D:\DUCAT\TESTUSE\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="com.add.TestAdder">
+      <SourceLine classname="com.add.TestAdder" sourcefile="TestAdder.java" sourcepath="com/add/TestAdder.java"/>
+    </Class>
+    <Field classname="com.add.TestAdder" name="add" signature="Lcom/add/Adder;" isStatic="false">
+      <SourceLine classname="com.add.TestAdder" sourcefile="TestAdder.java" sourcepath="com/add/TestAdder.java"/>
+    </Field>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 31 Jan 2016 21:41:34 +0530" total_classes="2" referenced_classes="15" total_bugs="1" total_size="20" num_packages="1" java_version="1.8.0_72" vm_version="25.72-b15" cpu_seconds="6.48" clock_seconds="6.27" peak_mbytes="219.56" alloc_mbytes="494.94" gc_seconds="0.25" priority_2="1">
+    <PackageStats package="com.add" total_bugs="1" total_types="2" total_size="20" priority_2="1">
+      <ClassStats class="com.add.Adder" sourceFile="Adder.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.add.TestAdder" sourceFile="TestAdder.java" interface="false" size="4" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="923" invocations="2" avgMicrosecondsPerInvocation="461677" maxMicrosecondsPerInvocation="585827" standardDeviationMircosecondsPerInvocation="124150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="426" invocations="313" avgMicrosecondsPerInvocation="1363" maxMicrosecondsPerInvocation="81100" standardDeviationMircosecondsPerInvocation="5463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="102" invocations="4" avgMicrosecondsPerInvocation="25529" maxMicrosecondsPerInvocation="98796" standardDeviationMircosecondsPerInvocation="42302"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="81" invocations="15" avgMicrosecondsPerInvocation="5441" maxMicrosecondsPerInvocation="25017" standardDeviationMircosecondsPerInvocation="7304"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="77" invocations="66" avgMicrosecondsPerInvocation="1167" maxMicrosecondsPerInvocation="8374" standardDeviationMircosecondsPerInvocation="1438"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="69" invocations="314" avgMicrosecondsPerInvocation="220" maxMicrosecondsPerInvocation="2159" standardDeviationMircosecondsPerInvocation="175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="68" invocations="30" avgMicrosecondsPerInvocation="2294" maxMicrosecondsPerInvocation="41163" standardDeviationMircosecondsPerInvocation="7429"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="58" invocations="15" avgMicrosecondsPerInvocation="3869" maxMicrosecondsPerInvocation="36955" standardDeviationMircosecondsPerInvocation="9032"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="57" invocations="2" avgMicrosecondsPerInvocation="28854" maxMicrosecondsPerInvocation="57612" standardDeviationMircosecondsPerInvocation="28757"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1454256834760" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Partition {
+
+	public static void main(String[] args) {
+		int k;
+		String s;
+		Scanner scanner =new Scanner(System.in);
+		s=scanner.next();
+
+	}
+
+}

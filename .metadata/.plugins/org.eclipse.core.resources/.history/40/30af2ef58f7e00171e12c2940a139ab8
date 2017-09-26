@@ -1,0 +1,76 @@
+import java.util.Scanner;
+
+class SnakeMon {
+
+	public static void main(String[] args) {
+		int i,t,snake=0,mongoose=0,j;
+		String list[];
+      Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the number of test cases");
+      t=scanner.nextInt();
+      list=new String[t];
+      System.out.println("Enter the string");
+      for(i=0;i<t;i++){
+    	  list[i]=scanner.next();
+      }
+
+	for(String s:list){
+		
+		s=s.toLowerCase();
+		if(s.charAt(0)=='m'&&s.charAt(1)=='s'){
+			s.replace(s.charAt(1), 'e');
+		}
+	if(s.charAt(s.length()-1)=='m'&&s.charAt(s.length()-2)=='s'){
+	s.replace(s.charAt(s.length()-2), 'e');	
+	}
+	for(i=1;i<s.length()-1;i++){
+		if(s.charAt(i)=='m'&&s.charAt(i-1)=='s'){
+			s.replace(s.charAt(i-1), 'e');
+		}
+	
+		else if(s.charAt(i)=='m'&&s.charAt(i+1)=='s'){
+			s.replace(s.charAt(i+1), 'e');
+		}
+	
+	}
+	snake=0;
+	mongoose=0;
+	for(j=0;j<s.length();j++){
+		char c=s.charAt(j);
+		if(c=='s'){
+			snake++;
+		}
+		else if(c=='m'){
+			mongoose++;
+		}
+	
+	}
+	
+	
+	
+	if(snake==mongoose){
+		System.out.println("tie");
+	}
+	else if(snake>mongoose){
+		System.out.println("snakes");
+	}
+	else{
+		System.out.println("mongooses");
+	}
+	
+	
+	System.out.println(s);
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	scanner.close();
+	
+	}
+
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="5" timestamp="1458073446260" analysisTimestamp="1458073445559" release="">
+  <Project projectName="STRING HANDLING">
+    <Jar>D:\DUCAT\STRING HANDLING\bin\com\string\buffer\demo\StringBufferDemo.class</Jar>
+    <AuxClasspathEntry>D:\DUCAT\STRING HANDLING\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_74\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>D:\DUCAT\STRING HANDLING\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.string.buffer.demo.StringBufferDemo">
+      <SourceLine classname="com.string.buffer.demo.StringBufferDemo" sourcefile="StringBufferDemo.java" sourcepath="com/string/buffer/demo/StringBufferDemo.java"/>
+    </Class>
+    <Method classname="com.string.buffer.demo.StringBufferDemo" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="com.string.buffer.demo.StringBufferDemo" start="9" end="24" startBytecode="0" endBytecode="205" sourcefile="StringBufferDemo.java" sourcepath="com/string/buffer/demo/StringBufferDemo.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="com.string.buffer.demo.StringBufferDemo" start="12" end="12" startBytecode="25" endBytecode="25" sourcefile="StringBufferDemo.java" sourcepath="com/string/buffer/demo/StringBufferDemo.java"/>
+    <SourceLine classname="com.string.buffer.demo.StringBufferDemo" start="12" end="12" startBytecode="25" endBytecode="25" sourcefile="StringBufferDemo.java" sourcepath="com/string/buffer/demo/StringBufferDemo.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 16 Mar 2016 01:33:16 +0530" total_classes="1" referenced_classes="15" total_bugs="1" total_size="13" num_packages="1" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="0.88" clock_seconds="0.70" peak_mbytes="245.90" alloc_mbytes="494.94" gc_seconds="0.07" priority_1="1">
+    <PackageStats package="com.string.buffer.demo" total_bugs="1" total_types="1" total_size="13" priority_1="1">
+      <ClassStats class="com.string.buffer.demo.StringBufferDemo" sourceFile="StringBufferDemo.java" interface="false" size="13" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="217" invocations="354" avgMicrosecondsPerInvocation="613" maxMicrosecondsPerInvocation="40892" standardDeviationMircosecondsPerInvocation="2344"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="191" invocations="2" avgMicrosecondsPerInvocation="95895" maxMicrosecondsPerInvocation="172898" standardDeviationMircosecondsPerInvocation="77003"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="51" invocations="354" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="4608" standardDeviationMircosecondsPerInvocation="252"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="36" invocations="15" avgMicrosecondsPerInvocation="2411" maxMicrosecondsPerInvocation="9611" standardDeviationMircosecondsPerInvocation="2953"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="28" invocations="15" avgMicrosecondsPerInvocation="1892" maxMicrosecondsPerInvocation="9638" standardDeviationMircosecondsPerInvocation="2794"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1458073405237" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1458073405240" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1458073415884" release="" codeSize="15" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1458073427014" release="" codeSize="15" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1458073439389" release="" codeSize="13" numClasses="1"/>
+  </History>
+</BugCollection>

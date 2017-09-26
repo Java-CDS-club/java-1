@@ -1,0 +1,23 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+
+public class ReadFile {
+static void readFile() throws IOException{
+	String path="D:\\DUCAT\\FILE HANDLING\\src\\ReadFile.java";
+	FileInputStream fs=new FileInputStream(path);
+	int singleByte=fs.read();
+	//int singleByte1;
+	while(singleByte!=-1){
+	System.out.println((char)singleByte);
+	singleByte=fs.read();
+	singleByte=fs.read();
+	}
+}
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+readFile();
+	}
+
+}

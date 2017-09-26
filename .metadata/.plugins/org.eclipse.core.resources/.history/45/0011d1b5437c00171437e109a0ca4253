@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class FirstCapDot {
+
+	public static void main(String[] args) {
+		String name[];
+		String s="";
+		int t;
+		int i,j;
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the number of names in the list from 2 to 100");
+		t=scanner.nextInt();
+		name=new String[t];
+		System.out.println("Enter the names in the list and length should be from 2 to 10");
+		for(i=0;i<t;i++){
+			name[i]=scanner.nextLine();
+		}
+       for(String nam:name){
+    	   for(i=0;i<nam.length();i++){
+    		   char c=nam.charAt(i);
+    		   if(!(Character.isSpaceChar(c))){
+    			 s=s+c;  
+    		   }
+    		   else{
+    			   System.out.println(Character.toUpperCase(s.charAt(0))+". ");
+    		       s="";
+    		   }
+    	   if(i==nam.length()-1){
+    		   System.out.println(Character.toUpperCase(s.charAt(0))+s.substring(1));
+    	   }
+    	   
+    	   }
+       }
+	}
+
+}

@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Cons {
+
+	public static void main(String[] args) {
+		int size,sum=0;
+		//ArrayList<Integer> sumList=new ArrayList<>();
+		ArrayList<Integer> list=new ArrayList<>();
+		System.out.println("Enter the size of the array");
+Scanner scanner=new Scanner(System.in);
+size=scanner.nextInt();
+System.out.println("Enter the numbers in the list");
+for(int i=1;i<=size;i++){
+	list.add(scanner.nextInt());
+}
+	Iterator<Integer> it=list.iterator();
+
+
+while(it.hasNext()){
+	//try{
+	int i=it.next();
+	sum=sum+i;
+	it.remove();
+	if(list.indexOf((i+1))>-1){
+		
+		list.remove(i+1);
+	}
+	else if(list.indexOf((i-1))>-1){
+		list.remove(i-1);
+	}
+
+	
+	}
+	System.out.println(sum);
+	
+	}
+
+}

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class FirstCapital {
+
+	public static void main(String[] args) {
+		String s,s2="";
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the sentence");
+		s=scanner.nextLine();
+		for(int i=0;i<s.length();i++){
+			char c=s.charAt(i);
+			if(!Character.isSpaceChar(c)){
+				s2=s2+c;
+			}
+			else{
+				char[] sen=s.toCharArray();
+				sen[0]=Character.toUpperCase(sen[0]);
+				s2=String.valueOf(sen);
+				System.out.println(s2);
+				s2="";
+			}
+		
+		}
+
+	}
+
+}
